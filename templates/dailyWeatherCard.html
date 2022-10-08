@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Daily weather card</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .before-card{
+            padding: 1rem;
+            width: 25rem;
+        }
+        .weather-card{
+            background-color: #03BB85;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            border-radius: 1rem;
+        }
+        .card-heading{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap: .5rem;
+            padding-bottom: 1rem;
+        }
+        .card-logo{
+            font-size: 2.2rem;
+            padding-top: 1rem;
+        }
+        .card-heading-details{
+            display: flex;
+            flex-direction: column;
+            gap:1rem;
+            padding-top: .5rem;
+            padding-right: 1rem;
+        }
+        .card-heading-temp{
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+        .card-details{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .card-details-low{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 1rem;
+        }
+        .card-details-high{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 1rem;
+        }
+        .card-details-wind{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 1rem;
+        }
+        .card-details-pop{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="before-card">
+        <div class="weather-card">
+            <div class="card-heading">
+                <div class="card-logo"><i class="fa-solid fa-sun "></i></div>
+                <div class="card-heading-details">
+                    <h3>Monday</h3>
+                    <h6>Desciption</h6>
+                </div>
+                <div class="card-heading-temp">
+                    <h1>21&deg;C</h1>
+                </div>
+            </div>
+            <div class="card-details">
+                <div class="card-details-low">
+                    <h3>Low Temperature</h3>
+                    <h3>18&deg;C</h3>
+                </div>
+                <div class="card-details-high">
+                    <h3>High Temperature</h3>
+                    <h3>25&deg;C</h3>
+                </div>
+                <div class="card-details-wind">
+                    <h3>Wind Speed</h3>
+                    <h3>29 Km/hr</h3>
+                </div>
+                <div class="card-details-pop">
+                    <h3>Precpitation</h3>
+                    <h3>50&percnt;</h3>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
