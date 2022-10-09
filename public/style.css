@@ -110,3 +110,60 @@ footer{
     justify-content: space-between;
     padding-right: 1rem;
 }
+/* location weather card */
+.before-weekly-card {
+    padding: 1rem;
+}
+.weekly-weather-card {
+    background-color: #03bb85;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 1rem;
+}
+.weekly-card-heading {
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 1rem;
+  }
+  .weekly-card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .weekly-card-deatils-day {
+    display: flex;
+  }
+  .weekly-card-deatils-day-dayOfWeek {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .weekly-card-deatils-day-description {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .weekly-card-deatils-day-lowTemp {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  .weekly-card-deatils-day-highTemp {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  .weekly-card-deatils-day-windSpeed {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  .weekly-card-deatils-day-pop {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }

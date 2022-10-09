@@ -1,0 +1,24 @@
+<div class="weekly-card-details-day">
+    <div class="weekly-card-deatils-day-dayOfWeek">
+      <h3><%= weather.dayOfweek.toUpperCase() %> </h3>
+    </div>
+    <div class="weekly-card-deatils-day-description">
+      <h6><%= weather.description %> </h6>
+    </div>
+    <div class="weekly-card-deatils-day-lowTemp">
+      <h3>Low:</h3>
+      <h3><%= weather.lowTemp %> &deg;C</h3>
+    </div>
+    <div class="weekly-card-deatils-day-highTemp">
+      <h3>High:</h3>
+      <h3><%= weather.highTemp %> &deg;C</h3>
+    </div>
+    <div class="weekly-card-deatils-day-windSpeed">
+      <h3>Wind:</h3>
+      <h3><%= weather.windSpeed %>  km/hr</h3>
+    </div>
+    <div class="weekly-card-deatils-day-pop">
+      <h3>Precipitation</h3>
+      <h3><%= weather.POP * 100 %> &percnt;</h3>
+    </div>
+  </div>

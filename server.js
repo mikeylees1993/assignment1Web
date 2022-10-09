@@ -53,7 +53,8 @@ app.get('/weather/:location',(request,response)=>{
         const location = request.params.location.toLowerCase();
         result = weather[location];
     }
-    response.send(result);
+    // response.send(result);
+    response.render('locationWeather',{location:request.params.location.toUpperCase(),data:result});
 });
 
 

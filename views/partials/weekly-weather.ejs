@@ -1,0 +1,12 @@
+<div class="before-weekly-card">
+    <div class="weekly-weather-card">
+        <div class="weekly-card-heading">
+            <h1><%= locale %> </h1>
+        </div>
+        <div class="weekly-card-details">
+            <% data.forEach((day)=>{ %> 
+            <%- include('location-card',{weather:day}) %> 
+            <%});%>
+        </div>
+    </div>
+</div>
