@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Daily weather card</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .before-weekly-card {
+        padding: 1rem;
+      }
+      .weekly-weather-card {
+        background-color: #03bb85;
+        width: 100%;
+        height: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        border-radius: 1rem;
+      }
+      .weekly-card-heading {
+        text-align: center;
+        font-size: larger;
+        padding-bottom: 1rem;
+      }
+      .weekly-card-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+      .weekly-card-deatils-day {
+        display: flex;
+      }
+      .weekly-card-deatils-day-dayOfWeek {
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      .weekly-card-deatils-day-description {
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      .weekly-card-deatils-day-lowTemp {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+      }
+      .weekly-card-deatils-day-highTemp {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+      }
+      .weekly-card-deatils-day-windSpeed {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+      }
+      .weekly-card-deatils-day-pop {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="before-weekly-card">
+      <div class="weekly-weather-card">
+        <div class="weekly-card-heading">
+          <h1>Kingston</h1>
+        </div>
+        <div class="weekly-card-details">
+          <!--Daycard starts here ie monday-->
+          <div class="weekly-card-details-day">
+            <div class="weekly-card-deatils-day-dayOfWeek">
+              <h3>Monday</h3>
+            </div>
+            <div class="weekly-card-deatils-day-description">
+              <h6>Cloudy with sunny breaks</h6>
+            </div>
+            <div class="weekly-card-deatils-day-lowTemp">
+              <h3>Low:</h3>
+              <h3>13&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-highTemp">
+              <h3>High:</h3>
+              <h3>30&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-windSpeed">
+              <h3>Wind:</h3>
+              <h3>15 km/hr</h3>
+            </div>
+            <div class="weekly-card-deatils-day-pop">
+              <h3>Precipitation</h3>
+              <h3>30&percnt;</h3>
+            </div>
+          </div>
+          <!-- Daycard for tuesday -->
+          <div class="weekly-card-details-day">
+            <div class="weekly-card-deatils-day-dayOfWeek">
+              <h3>Tuesday</h3>
+            </div>
+            <div class="weekly-card-deatils-day-description">
+              <h6>Cloudy with sunny breaks</h6>
+            </div>
+            <div class="weekly-card-deatils-day-lowTemp">
+              <h3>Low:</h3>
+              <h3>13&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-highTemp">
+              <h3>High:</h3>
+              <h3>30&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-windSpeed">
+              <h3>Wind:</h3>
+              <h3>15 km/hr</h3>
+            </div>
+            <div class="weekly-card-deatils-day-pop">
+              <h3>Precipitation</h3>
+              <h3>30&percnt;</h3>
+            </div>
+          </div>
+          <!-- daycard for wednesday -->
+          <div class="weekly-card-details-day">
+            <div class="weekly-card-deatils-day-dayOfWeek">
+              <h3>Wednesday</h3>
+            </div>
+            <div class="weekly-card-deatils-day-description">
+              <h6>Cloudy with sunny breaks</h6>
+            </div>
+            <div class="weekly-card-deatils-day-lowTemp">
+              <h3>Low:</h3>
+              <h3>13&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-highTemp">
+              <h3>High:</h3>
+              <h3>30&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-windSpeed">
+              <h3>Wind:</h3>
+              <h3>15 km/hr</h3>
+            </div>
+            <div class="weekly-card-deatils-day-pop">
+              <h3>Precipitation</h3>
+              <h3>30&percnt;</h3>
+            </div>
+          </div>
+          <!-- daycard for thursday -->
+          <div class="weekly-card-details-day">
+            <div class="weekly-card-deatils-day-dayOfWeek">
+              <h3>Thursday</h3>
+            </div>
+            <div class="weekly-card-deatils-day-description">
+              <h6>Cloudy with sunny breaks</h6>
+            </div>
+            <div class="weekly-card-deatils-day-lowTemp">
+              <h3>Low:</h3>
+              <h3>13&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-highTemp">
+              <h3>High:</h3>
+              <h3>30&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-windSpeed">
+              <h3>Wind:</h3>
+              <h3>15 km/hr</h3>
+            </div>
+            <div class="weekly-card-deatils-day-pop">
+              <h3>Precipitation</h3>
+              <h3>30&percnt;</h3>
+            </div>
+          </div>
+          <!-- daycard for friday -->
+          <div class="weekly-card-details-day">
+            <div class="weekly-card-deatils-day-dayOfWeek">
+              <h3>Friday</h3>
+            </div>
+            <div class="weekly-card-deatils-day-description">
+              <h6>Cloudy with sunny breaks</h6>
+            </div>
+            <div class="weekly-card-deatils-day-lowTemp">
+              <h3>Low:</h3>
+              <h3>13&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-highTemp">
+              <h3>High:</h3>
+              <h3>30&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-windSpeed">
+              <h3>Wind:</h3>
+              <h3>15 km/hr</h3>
+            </div>
+            <div class="weekly-card-deatils-day-pop">
+              <h3>Precipitation</h3>
+              <h3>30&percnt;</h3>
+            </div>
+          </div>
+          <!-- daycard for saturday -->
+          <div class="weekly-card-details-day">
+            <div class="weekly-card-deatils-day-dayOfWeek">
+              <h3>Saturday</h3>
+            </div>
+            <div class="weekly-card-deatils-day-description">
+              <h6>Cloudy with sunny breaks</h6>
+            </div>
+            <div class="weekly-card-deatils-day-lowTemp">
+              <h3>Low:</h3>
+              <h3>13&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-highTemp">
+              <h3>High:</h3>
+              <h3>30&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-windSpeed">
+              <h3>Wind:</h3>
+              <h3>15 km/hr</h3>
+            </div>
+            <div class="weekly-card-deatils-day-pop">
+              <h3>Precipitation</h3>
+              <h3>30&percnt;</h3>
+            </div>
+          </div>
+          <!-- daycard for sunday -->
+          <div class="weekly-card-details-day">
+            <div class="weekly-card-deatils-day-dayOfWeek">
+              <h3>Sunday</h3>
+            </div>
+            <div class="weekly-card-deatils-day-description">
+              <h6>Cloudy with sunny breaks</h6>
+            </div>
+            <div class="weekly-card-deatils-day-lowTemp">
+              <h3>Low:</h3>
+              <h3>13&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-highTemp">
+              <h3>High:</h3>
+              <h3>30&deg;C</h3>
+            </div>
+            <div class="weekly-card-deatils-day-windSpeed">
+              <h3>Wind:</h3>
+              <h3>15 km/hr</h3>
+            </div>
+            <div class="weekly-card-deatils-day-pop">
+              <h3>Precipitation</h3>
+              <h3>30&percnt;</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -81,7 +81,8 @@ app.get('/weather/:location/:day',(request,response)=>{
             result = daily;
         }
     }
-    response.send(result);
+    // response.send(result);
+    response.render('dailyWeather',{"weather":result,location:request.params.location});
 });
 /**
 * -----------------[END OF ROUTES]--------------------------------

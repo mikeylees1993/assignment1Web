@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %> 
+    <%- include('partials/head.ejs') %> 
 <body>
-    <%- include('./partials/header.ejs') %>
-    <%- include('./partials/weatherCardDaily.ejs') %>
-    <%- include('./partials/footer.ejs') %>
+    <%- include('partials/header.ejs') %>
+    <div style="padding-top: 1rem;text-align:center;">
+        <h1><%= location.toUpperCase() %> </h1>
+    </div>
+    <div style="padding-top: 2rem;padding-bottom: 1rem;">
+        <a class="btn" href="/" ><i class="fa-solid fa-left-long"></i> Back</a>
+    </div>
+    <%- include('partials/weatherCardDaily.ejs') %>
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>
