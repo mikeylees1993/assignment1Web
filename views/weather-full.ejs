@@ -6,7 +6,9 @@
     <div style="padding-top: 2rem; padding-bottom: 1rem">
       <a class="btn" href="/"><i class="fa-solid fa-left-long"></i> Back</a>
     </div>
-    <%- include('partials/weekly-weather',{locale:location,data:data}) %>
+    <% Weather.forEach((weather,index)=>{ %> 
+        <%- include('partials/weekly-weather',{locale:locations[index],data:weather})%>
+    <% }) %> 
     <%- include('partials/footer') %>
   </body>
 </html>

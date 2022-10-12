@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <div style="padding-top: 2rem;padding-bottom: 1rem;">
+        <a class="btn" href="/" ><i class="fa-solid fa-left-long"></i> Back</a>
+    </div>
+    <div class="average-Temp-before-card">
+        <div class="average-Temp-weather-card">
+            <div class="average-Temp-card-heading">
+                <h1>Weekly Averages</h1>
+            </div>
+            <div class="average-Temp-card-details">
+                <div class="average-Temp-Kingston-block">
+                    <div>
+                        <h3><%= locations[0] %> </h3>
+                    </div>
+                    <div>
+                        <h1><%= averages[0] %> &deg;C</h1>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="average-Temp-Toronto-block">
+                    <div>
+                        <h3><%= locations[1] %></h3>
+                    </div>
+                    <div>
+                        <h1><%= averages[1] %>&deg;C</h1>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="average-Temp-Ottawa-block">
+                    <div>
+                        <h3><%= locations[2] %></h3>
+                    </div>
+                    <div>
+                        <h1><%= averages[2] %>&deg;C</h1>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

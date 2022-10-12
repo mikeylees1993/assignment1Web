@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs') %> 
+<body>
+    <%- include('partials/header.ejs') %>
+    <div style="padding-top: 1rem;text-align:center;">
+    </div>
+    <div style="padding-top: 2rem;padding-bottom: 1rem;">
+        <a class="btn" href="/" ><i class="fa-solid fa-left-long"></i> Back</a>
+    </div>
+    <h3 style="padding-bottom: 1rem;"><%= location.toUpperCase() %> </h3>
+    <ul style="padding-left: 1rem ;">
+        <% days.forEach((day)=>{%>
+            <li style="list-style: none;"><h6><%= day.toUpperCase() %></h6></li>    
+        <%})%>
+    </ul>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .average-Temp-before-card{
+            padding: 1rem;
+            width: 25rem;
+        }
+        .average-Temp-weather-card{
+            background-color: #03BB85;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            border-radius: 1rem;
+        }
+        .average-Temp-card-heading
+        {
+            text-align: center;
+            padding-top: 1rem;
+        }
+        .average-Temp-card-details{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:1rem;
+        }
+        .average-Temp-Kingston-block
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 10rem;
+            text-align: center;
+        }
+        .average-Temp-Toronto-block
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 10rem;
+            text-align: center;
+        }
+        
+        .average-Temp-Ottawa-block
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 10rem;
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="average-Temp-before-card">
+        <div class="average-Temp-weather-card">
+            <div class="average-Temp-card-heading">
+                <h1>Weekly Averages</h1>
+            </div>
+            <div class="average-Temp-card-details">
+                <div class="average-Temp-Kingston-block">
+                    <div>
+                        <h3>Kingston</h3>
+                    </div>
+                    <div>
+                        <h1>24&deg;C</h1>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="average-Temp-Toronto-block">
+                    <div>
+                        <h3>Toronto</h3>
+                    </div>
+                    <div>
+                        <h1>30&deg;C</h1>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="average-Temp-Ottawa-block">
+                    <div>
+                        <h3>Ottawa</h3>
+                    </div>
+                    <div>
+                        <h1>24&deg;C</h1>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

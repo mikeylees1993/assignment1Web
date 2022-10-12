@@ -92,7 +92,7 @@ const SundayKing = {
     lowTemp:5,
     currentTemp:12,
     windSpeed:23,
-    description:'A mix of sun and clouds',
+    description:'Sunny',
     dayOfweek:'wednesday'
  };
  const ThursdayTor = {
